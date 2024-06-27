@@ -10,6 +10,8 @@ def get_ndx():
 # get JSON
 def get_json_data(url):
     response = requests.get(url)
+
+    # Example of our JSON: {"id":321,"prev_id":123,"qty":0.0,"symbol":"NQ"}
     return response.json()
 
 # format JSON into text
